@@ -10,3 +10,8 @@
 - npm i OR npm i --legacy-peer-deps
 - npm start
 ```
+## WEB/APP
+
+```
+- gentok.net
+```
