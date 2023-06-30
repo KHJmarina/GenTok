@@ -1,0 +1,41 @@
+@keyframes scroll-left {
+  0% {
+    left: calc(-617px * 3);
+  }
+  100% {
+    left: calc(-617px * 4);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    left: calc(-617px * 4);
+  }
+  100% {
+    left: calc(-617px * 3);
+  }
+}
+
+.infinity-scroll-left {
+  background-color: #FF7F3F;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: scroll-left 15s linear infinite;
+}
+
+.infinity-scroll-right {
+  background-color: #FF7F3F;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  animation: scroll-right 15s linear infinite;
+}
+
+.infinity-scroll-left svg,
+.infinity-scroll-right svg {
+  /* image-rendering: auto; */
+  /* image-rendering: crisp-edges; */
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  /* image-rendering: -webkit-optimize-contrast; */
+}
