@@ -1,0 +1,39 @@
+@keyframes flow-bg-up {
+  0% {
+    top: -1188px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.infinity-flow-bg-up {
+  overflow: 'hidden';
+  position: 'relative';
+}
+
+.infinity-flow-bg-up::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: calc(1188px * 2);
+  z-index: -1;
+  background: url(./gradient-background.svg) repeat;
+  background-size: 300px 1188px;
+  animation: flow-bg-up 1.6s linear infinite;
+}
+
+.infinity-twinkle {
+  animation: twinkle 0.9s linear infinite;
+}
